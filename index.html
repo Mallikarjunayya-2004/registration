@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Student Registration Form</h2>
+    <form id="studentForm">
+      <label>Name</label>
+      <input type="text" id="name" name="name">
+
+      <label>Email</label>
+      <input type="email" id="email" name="email">
+
+      <label>Phone</label>
+      <input type="text" id="phone" name="phone">
+
+      <label>Course</label>
+      <select id="course" name="course">
+        <option value="">Select Course</option>
+        <option value="B.E Computer Science">B.E Computer Science</option>
+        <option value="B.E Electronics">B.E Electronics</option>
+        <option value="B.E Information Science">B.E Information Science</option>
+      </select>
+
+      <label>Address</label>
+      <textarea id="address" name="address"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
